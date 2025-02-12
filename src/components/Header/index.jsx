@@ -18,7 +18,7 @@ import { IoTriangle } from "react-icons/io5";
 import useMedia from "../../hooks/useMedia";
 
 export const Header = () => {
-  const mobile = useMedia("(max-width: 600px)");
+  const mobile = useMedia("(max-width: 912px)");
 
   return (
     <S.Header>
@@ -35,17 +35,17 @@ export const Header = () => {
         </S.Menu>
       </S.Nav>
 
-      <S.Content>
+      <S.Intro>
         <Title title={"High Security for your places"} text={"Code Security"} />
 
         <S.Triangle>
-          <IoTriangle size={60} color="var(--color-0)" />
+          <IoTriangle size={50} color="var(--color-0)" />
         </S.Triangle>
 
-        <S.Arrow mobile={mobile}>
-          <FaArrowUp size={mobile ? 70 : 90} />
+        <S.Arrow $mobile={mobile}>
+          <FaArrowUp size={50} />
         </S.Arrow>
-      </S.Content>
-    </S.Header>
+      </S.Intro>
+    </S.Header >
   );
 };

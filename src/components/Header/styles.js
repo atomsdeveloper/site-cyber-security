@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  height: 50vh;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
 
-  background-color: var(--color-p5);
+  background-color: var(--color-p5); // Remove
 `;
 
 export const Nav = styled.nav`
@@ -18,7 +20,7 @@ export const Nav = styled.nav`
 `;
 
 export const Icon = styled.div`
-  width: 15%;
+  width: 20%;
   height: 100%;
 
   gap: 0.5rem;
@@ -27,8 +29,12 @@ export const Icon = styled.div`
   justify-content: start;
 
   p {
-  font: var(--poppins-18);
+    font: var(--poppins-18);
     color: var(--color-0);
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 `;
 
@@ -58,7 +64,7 @@ export const Button = styled.div`
   }
 `;
 
-export const Content = styled.article`
+export const Intro = styled.article`
   width: 100%;
   height: calc(100% - 10vh);
 
@@ -72,10 +78,14 @@ export const Content = styled.article`
 `;
 
 export const Arrow = styled.div`
-  bottom: ${(props) => (props.mobile ? "8rem" : "7em")};
-  right:  ${(props) => (props.mobile ? "1rem" : "8rem")};
+  bottom: ${(props) => (props.$mobile ? "8rem" : "7em")};
+  right:  ${(props) => (props.$mobile ? "2rem" : "8rem")};
   position: absolute;
   transform: rotate(300deg);
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Triangle = styled.div`
@@ -83,6 +93,8 @@ export const Triangle = styled.div`
   left: 1rem;
   position: absolute;
   transform: rotate(240deg);
+
+    @media (max-width: 480px) {
+    display: none;
+  }
 `;
-
-
