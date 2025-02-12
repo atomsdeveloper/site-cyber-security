@@ -5,6 +5,7 @@ import * as S from "./styles";
 
 // Components
 import { Header } from "../../components/Header";
+import { Infos } from "../../components/Infos";
 
 // Helpers
 import Head from "../../components/helpers/Head";
@@ -32,6 +33,7 @@ const Home = () => {
 
       {/*Components da página*/}
       <Header />
+      <Infos />
 
 
       {/*Componente Footer*/}
