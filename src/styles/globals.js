@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
 		--poppins-18: 400 1.125rem/1.35 "Poppins", sans-serif;
 		--poppins-24: 400 1.5rem/1.5 "Poppins", sans-serif;
 		--poppins-32: 600 2rem/1.25 "Poppins", sans-serif;
-		--poppins-48: 600 3rem/1.5 "Poppins", sans-serif;
+		--poppins-48: 600 3rem/1.125 "Poppins", sans-serif;
 		--poppins-64: 600 4rem/1.125 "Poppins", sans-serif;
 	}
 
