@@ -7,7 +7,7 @@ import P from "prop-types";
 import * as S from "./styles";
 
 // Components
-import { Container } from "../../components/container";
+import Container from "../../components/container/index";
 
 export const NotFound = ({ text }) => {
   return (
