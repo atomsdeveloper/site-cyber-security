@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 
+// Syled Components
+import * as S from "./styles";
+
 // Components
+import { Header } from "../../components/Header";
 
 // Helpers
 import Head from "../../components/helpers/Head";
@@ -19,18 +23,19 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      {/*Component Navbar ou Header*/}
-      <main>
-        <Head
-          title="Home"
-          description="Olá me chamo Renan Nascimento, sou estudante de programação, em busca de uma oportunidade. Portfólio feito para apresentar algumas informações e projetos feitos por mim!"
-        />
-        {/*Components da página*/}
-        <p>Teste</p>
-      </main>
+    <S.Content>
+
+      <Head
+        title="Home"
+        description="Olá me chamo Renan Nascimento, sou estudante de programação, em busca de uma oportunidade. Este site foi feito para apresentar algumas habilidades que eu possuo em tecnologias Front-End!"
+      />
+
+      {/*Components da página*/}
+      <Header />
+
+
       {/*Componente Footer*/}
-    </>
+    </S.Content>
   );
 };
 export default Home;
