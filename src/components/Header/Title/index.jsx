@@ -13,7 +13,7 @@ export const Title = ({ title, text }) => {
       <h1>{textParts[0]} <span> Security </span></h1>
       <br />
       <h1>{textParts[1]}</h1>
-      <p>{text}</p>
+      <p>{text.toUpperCase()}</p>
     </S.Title>
   );
 };

@@ -6,7 +6,7 @@ export const Title = styled.div`
   flex-direction: column;
 
   h1 {
-    font: var(--poppins-64);
+    font: var(--poppins-48);
     font-weight: bold;
 
     span {
@@ -27,7 +27,7 @@ export const Title = styled.div`
   }
 
   p {
-    font: var(--poppins-24);
+    font: var(--poppins-16);
     margin-top: 0.5rem;
     color: var(--color-0);
   }
