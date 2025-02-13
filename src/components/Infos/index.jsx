@@ -1,31 +1,40 @@
 import * as S from "./styles";
 
-export const Infos = () => {
+// Components
+import { InfoScript } from "./InfoScript";
+import { InfoSecurity } from "./InfoSecurity";
+
+// Images
+import ImageCam from "../../assets/imgs/cam-1.png"
+
+export const Content = () => {
   return (
     <S.Container>
       <S.InfoContent>
-        <S.InfoScript>
-          <div style={{ height: "50%", display: "flex", width: "100%", background: "green", }}>
-            <div style={{ width: "25%", background: "grey", display: "flex", justifyContent: "center", alignItems: "center" }}>
-              Icon
-            </div>
-            <div style={{ flex: 1, display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "start" }}>
-              <h3>Texto 1</h3>
-              <p> Descriptions</p>
-            </div>
-          </div>
-          <div>
-            <h3>Texto 2</h3>
-            <p> Descriptions</p>
-          </div>
-        </S.InfoScript>
-        <S.InfoImage>Imagem</S.InfoImage>
+        <InfoScript
+          firstTitle={"Innovation and Services"}
+          firstText={
+            "Lorem Ipsum Sha Tree second two texts and half men after lorem day ipsum text aleatory before whrite script"
+          }
+          secondTitle={"Technology"}
+          secondText={
+            "Lorem Ipsum Sha Tree second two texts and half men after lorem day ipsum text aleatory before whrite script"
+          }
+        />
+        <S.InfoImage>
+          <S.Background>
+            <S.BlueCircle>
+              <img src={ImageCam} alt="Imagem de uma Câmera de Segurança" />
+            </S.BlueCircle>
+          </S.Background>
+          <S.CircleGrey />
+        </S.InfoImage>
       </S.InfoContent>
 
-      <S.InfoSecurity>
-        <S.InfoCards>Cards</S.InfoCards>
-        <S.ImageCards>Image</S.ImageCards>
-      </S.InfoSecurity>
+      <InfoSecurity />
+
+      <div style={{ background: "var(--color-p5)", height: "100vh", width: '100%' }}>Teste</div>
+
     </S.Container>
   );
 };
