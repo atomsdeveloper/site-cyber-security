@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-  height: 40vh;
+  height: 280px;
   display: flex;
   flex-direction: column;
 
