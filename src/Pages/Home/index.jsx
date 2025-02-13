@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 // Components
 import { Header } from "../../components/Header";
-import { Infos } from "../../components/Infos";
+import { Content } from "../../components/Infos";
 
 // Helpers
 import Head from "../../components/helpers/Head";
@@ -33,8 +33,7 @@ const Home = () => {
 
       {/*Components da página*/}
       <Header />
-      <Infos />
-
+      <Content />
 
       {/*Componente Footer*/}
     </S.Content>
