@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 // Components
 import { Header } from "../../components/Header";
-import { Content } from "../../components/Infos";
+import { Content } from "../../components/Content";
 
 // Helpers
 import Head from "../../components/helpers/Head";
