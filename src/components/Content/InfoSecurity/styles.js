@@ -33,7 +33,7 @@ export const ColumnMobile = styled.div`
   bottom: 0;
 
   width: 280px;
-  height: 320px;
+  height: 80%;
   background: var(--color-12);
 `;
 
@@ -44,7 +44,7 @@ export const ColumnSecurity = styled.div`
   bottom: 0;
 
   width: 280px;
-  height: 320px;
+  height: 80%;
   background: var(--color-12);
 `;
 
@@ -56,6 +56,4 @@ export const ImageCards = styled.div`
     width: 100%;
     height: 50%;
   }
-
-  background: pink;
 `;

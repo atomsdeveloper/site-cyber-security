@@ -42,6 +42,10 @@ export const Background = styled.div`
 
   border-radius: 0px 0px 50rem 50rem;
   background: var(--color-12);
+
+  @media (max-width: 550px) {
+    width: 220px;
+  }
 `;
 
 export const CircleGrey = styled.div`
@@ -71,11 +75,15 @@ export const CircleGrey = styled.div`
   }
 
   @media (max-width: 550px) {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 
-    top: calc(50% - -50px); /* Mantém o círculo sempre centralizado verticalmente */
-    left: calc(50% - 200px); /* Mantém o círculo sempre centralizado verticalmente */
+    top: calc(50% - -100px); /* Mantém o círculo sempre centralizado verticalmente */
+    left: calc(50% - 160px); /* Mantém o círculo sempre centralizado verticalmente */
+  }
+
+  @media (max-width: 360px) {
+    display: none;
   }
 `;
 
@@ -111,5 +119,12 @@ export const BlueCircle = styled.div`
 
   @media (max-width: 720px) {
     margin-top: 7.5rem;
+  }
+
+  @media (max-width: 550px) {
+      width: 200px;
+      height: 200px;
+
+      margin-top: 12rem;
   }
 `;
