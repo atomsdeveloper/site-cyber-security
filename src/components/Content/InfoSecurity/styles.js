@@ -130,8 +130,57 @@ export const ImageCards = styled.div`
   flex: 1;
   width: 50%;
 
-  @media (max-width: 900px) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > * {
+    flex: 1 1 33%; /* Cresce, encolhe e tem base de 33% */
+
+    display: flex;
+    justify-content: center;
+
+    padding: .875rem
+  }
+
+  @media (max-width: 1000px) {
     width: 100%;
     height: 50%;
   }
+
+  @media (max-width: 420px) {
+    flex-direction: column;
+  }
 `;
+
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  span {
+    text-align: end;
+  }
+`;
+
+export const Technology = styled.div`
+  width: 80%;
+  padding: 1rem;
+
+  border: 1px solid var(--color-p5);
+  border-radius: 30px;
+
+  text-align: center;
+
+  transform: rotate(90deg);
+
+  span {
+    font: var(--poppins-12);
+  }
+
+  @media (max-width: 420px) {
+    width: 80%;
+    transform: rotate(0deg);
+  }
+`;
+
