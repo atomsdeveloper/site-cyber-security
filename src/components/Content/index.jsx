@@ -7,6 +7,10 @@ import { InfoSecurity } from "./InfoSecurity";
 // Images
 import ImageCam from "../../assets/imgs/cam-1.png"
 
+// Icons
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 export const Content = () => {
   return (
     <S.Container>
@@ -33,7 +37,27 @@ export const Content = () => {
 
       <InfoSecurity />
 
-      <div style={{ background: "var(--color-p5)", height: "100vh", width: '100%' }}>Teste</div>
+      <S.Footer>
+        <S.Text>
+          <p>
+            Renan Nascimento da Silva
+          </p>
+        </S.Text>
+        <S.SocialMedia>
+          <a
+            href="http://atomsdev.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.atomsdev.vercel.app
+          </a>
+          ||
+          <S.Icons>
+            <FaLinkedin size={20} />
+            <FaGithub size={20} />
+          </S.Icons>
+        </S.SocialMedia>
+      </S.Footer>
 
     </S.Container>
   );

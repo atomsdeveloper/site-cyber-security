@@ -128,3 +128,74 @@ export const BlueCircle = styled.div`
       margin-top: 12rem;
   }
 `;
+
+export const Footer = styled.footer`
+  width: 100%;
+  height: 12vh;
+
+  padding: 0rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: var(--color-p5);
+
+  @media (max-width: 425px){
+    flex-direction: column;
+    justify-content: center;
+  }
+`;
+
+export const Text = styled.div`
+  width: 250px;
+
+  p {
+    font: var(--poppins-16);
+    color: var(--color-0);
+
+    @media (max-width: 525px){
+      font: var(--poppins-12);
+    }
+  }
+
+  @media (max-width: 425px){
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const SocialMedia = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  a {
+    font: var(--poppins-16);
+    padding-right: .5rem;
+
+    @media (max-width: 525px){
+      font: var(--poppins-12);
+    }
+  }
+
+  @media (max-width: 425px){
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+  }
+`;
+
+
+export const Icons = styled.div`
+  padding-left: .5rem;
+
+  gap: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
