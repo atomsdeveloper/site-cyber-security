@@ -90,17 +90,17 @@ export const GlobalStyle = createGlobalStyle`
 
   /* Scrollbar Styling */
 	::-webkit-scrollbar {
-		width: 1rem;
+		width: .9rem;
 	}
 
 	::-webkit-scrollbar-track {
-		margin: 1em 0;
-		border-radius: 1em;
+		margin: .5em 0;
+		border-radius: .5em;
 		background-color: transparent;
 	}
 
 	::-webkit-scrollbar-thumb {
-		border-radius: 1.5rem;
+		border-radius: .5rem;
 		border: 0.375rem solid transparent;
 		background-color: #38BDF8;
 		background-clip: padding-box;
